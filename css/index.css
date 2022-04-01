@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container{
+    position: relative;
+    width: 80%;
+    margin:auto auto;
+    text-align: center;
+  }
+  .container .section{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+  }
+  
+  .container .section:nth-child(1){
+    background: url("../imagens/section1.jpg");
+  }
+  
+  #sec{
+    background: url("../imagens/section2.jpg");
+  }
+
+  .container .section:nth-child(1), #sec{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .section div{
+      border: 1px black solid;
+      margin: auto 0;
+  }
