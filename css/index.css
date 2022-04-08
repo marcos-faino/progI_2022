@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    color: #420c21;
   }
   
   .container{
     position: relative;
     width: 80%;
-    margin:auto auto;
+    margin:auto;
     text-align: center;
   }
   .container .section{
@@ -18,7 +19,7 @@ body{
   }
   
   .container .section:nth-child(1){
-    background: url("../imagens/section1.jpg");
+    background: url("../imagens/section1.webp");
   }
   
   #sec{
@@ -26,12 +27,29 @@ body{
   }
 
   .container .section:nth-child(1), #sec{
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   .section div{
-      border: 1px black solid;
-      margin: auto 0;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top:35%;
+    left:25%;
+    /*margin-top: -5vh;
+    margin-left: -5vw;*/
+  }
+
+  h1, h3{
+    font-size: 5vmin;
+    text-shadow: 1px 1px white, -1px -1px rgb(31, 30, 30);
+    color:rgb(216, 195, 160);
+
+  }
+  button{
+    width:25vmin;
+    height:12vmin;
+    border-radius: 1em 1em;
   }
